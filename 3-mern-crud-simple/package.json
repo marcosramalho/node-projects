@@ -1,8 +1,20 @@
 {
   "name": "3-mern-crud-simple",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
+  "description": "Node.js Restful CRUD API with Node.js, Express and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "rest",
+    "api",
+    "mongodb"
+  ],
+  "author": "Marcos Ramalho",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
