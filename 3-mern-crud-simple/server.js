@@ -28,7 +28,9 @@ db.mongoose
 
 app.get('/', (req, res) => {
   res.json({ message: 'Tutorials Sytem' });
-})
+});
+
+require('./app/routes/tutorials.route')(app);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
