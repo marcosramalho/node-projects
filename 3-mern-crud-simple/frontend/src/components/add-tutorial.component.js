@@ -78,7 +78,7 @@ class AddTutorial extends Component {
                   className="form-control" 
                   id="title" 
                   name="title" 
-                  require 
+                  required 
                   value={this.state.title} 
                   onChange={this.onChangeTitle}                  
                 />
