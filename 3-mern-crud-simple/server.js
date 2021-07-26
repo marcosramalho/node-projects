@@ -4,13 +4,13 @@ const cors = require('cors');
 const app = express();
 
 const corsOptions = {
-  origin: 'http://localhost:3000'
+  origin: 'http://localhost:8081'
 }
 
 app.use(cors(corsOptions));
 
-app(express.json());
-app(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 const db = require("./app/models");
 db.mongoose
