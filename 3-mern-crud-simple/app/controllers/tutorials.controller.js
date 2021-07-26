@@ -79,7 +79,7 @@ exports.delete = (req, res) => {
 
 // delete all tutorials from the database
 exports.deleteAll = (req, res) => {
-  Tutorial.deleteAll({}).then(data => {
+  Tutorial.deleteMany({}).then(data => {
     res.json({ message: `${data.deletedCount} Tutorials were deleted successfully!` });
   }).catch(err => {
     res.status(500).json({ message: err.message || 'Some error occurred while removing all tutorials. ' })
