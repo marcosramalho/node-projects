@@ -4,7 +4,7 @@ import './App.css';
 
 import AddTutorialComponent from "./components/AddTutorialsComponent";
 import TutorialComponent from "./components/TutorialsComponent";
-import TutorialsListComponent from "./components/TutorialsComponent";
+import TutorialsListComponent from "./components/ListTutorialsComponent";
 
 function App() {
   return (
