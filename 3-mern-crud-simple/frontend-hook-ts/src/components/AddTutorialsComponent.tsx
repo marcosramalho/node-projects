@@ -12,7 +12,7 @@ const AddTutorialsComponent: React.FC = () => {
   const [tutorial, setTutorial] = useState(initialTutorialState);
   const [submitted, setSubmitted] = useState(false);
 
-  const handleInputChange = (event: any) => {
+  const handleInputChange = (event:ChangeEvent<HTMLInputElement>) => {
     const {name, value} = event.target;
     setTutorial({ ...tutorial, [name]: value})
   }
