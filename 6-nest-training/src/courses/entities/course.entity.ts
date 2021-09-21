@@ -1,4 +1,3 @@
-import { type } from 'os';
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
@@ -12,7 +11,7 @@ export class Course {
   @Column()
   description: string;
 
-  @Column()
+  @Column('decimal')
   price: number;
 
   @Column('json', { nullable: true })

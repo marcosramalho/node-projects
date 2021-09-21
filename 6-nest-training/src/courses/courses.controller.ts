@@ -18,7 +18,11 @@ export class CoursesController {
 
   @Get()
   findAll() {
-    return this.coursesService.findAll();
+    try {
+      return this.coursesService.findAll();
+    } catch (error) {
+      throw error;
+    }
   }
 
   @Get(':id')
